@@ -1,0 +1,1 @@
+<a href="javascript:void(0)" onclick="open_design_dialog()">дизайн</a>

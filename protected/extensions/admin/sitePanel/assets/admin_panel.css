@@ -1,0 +1,128 @@
+.ap-favicon{
+    background-image: url(http://corner-cms.com/logo.php?size=30x30&color=999&type=icon_cms);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+.ap-navbar-default.open .ap-navbar-brand{
+    border-right: 1px solid #cdcdcd;
+}
+.ap-navbar-default{
+    border-color: #cdcdcd;
+    border-width: 1px;
+    border-style: solid;
+    width:50px;
+}
+
+.ap-navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.ap-navbar-fixed-top,
+.ap-navbar-fixed-bottom,
+.ap-navbar-fixed-left .ap-nav > li > a{
+    background: #f9f9f9;
+    background: -moz-linear-gradient(top,  #f9f9f9 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#eeeeee));
+    background: -webkit-linear-gradient(top,  #f9f9f9 0%,#eeeeee 100%);
+    background: -o-linear-gradient(top,  #f9f9f9 0%,#eeeeee 100%);
+    background: -ms-linear-gradient(top,  #f9f9f9 0%,#eeeeee 100%);
+    background: linear-gradient(top,  #f9f9f9 0%,#eeeeee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#eeeeee',GradientType=0 );
+
+}
+.ap-navbar-fixed-top{
+    -webkit-box-shadow: 0px 15px 15px -20px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 15px 15px -20px rgba(0,0,0,0.50);
+    box-shadow: 0px 15px 15px -20px rgba(0,0,0,0.50);
+    border-width: 0 1px 1px 0;
+}
+.ap-navbar-fixed-bottom{
+    -webkit-box-shadow: 0px -15px 15px -20px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px -15px 15px -20px rgba(0,0,0,0.50);
+    box-shadow: 0px -15px 15px -20px rgba(0,0,0,0.50);
+    border-width: 1px 1px 0 0;
+}
+.ap-navbar-fixed-top.open,
+.ap-navbar-fixed-bottom.open{
+    width:100%;
+}
+.ap-navbar-fixed-top.open{
+    border-width: 0 0 1px 0;
+}
+.ap-navbar-fixed-bottom.open{
+    border-width: 1px 0 0 0;
+}
+.ap-navbar-nav > li{
+    border-left: 1px solid #fff;
+    border-right: 1px solid #cdcdcd;
+    border-top:0;
+    border-bottom: 0;
+}
+.ap-navbar-fixed-left .ap-nav > li,
+.ap-navbar-fixed-right .ap-nav > li{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #cdcdcd;
+
+}
+.ap-nav > li > a{
+    color: #636363;
+}
+.ap-nav > li > a:hover{
+    background: #f6f6f6;
+    background: -moz-linear-gradient(top,  #f6f6f6 0%, #e8e8e8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#e8e8e8));
+    background: -webkit-linear-gradient(top,  #f6f6f6 0%,#e8e8e8 100%);
+    background: -o-linear-gradient(top,  #f6f6f6 0%,#e8e8e8 100%);
+    background: -ms-linear-gradient(top,  #f6f6f6 0%,#e8e8e8 100%);
+    background: linear-gradient(top,  #f6f6f6 0%,#e8e8e8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#e8e8e8',GradientType=0 );
+
+}
+.ap-navbar-form{
+    padding: 8px 15px;
+    margin:0;
+}
+.ap-navbar-fixed-top .ap-navbar-form,
+.ap-navbar-fixed-bottom .ap-navbar-form{
+    border-left: 1px solid #fff;
+    border-right: 1px solid #cdcdcd;
+}
+
+.ap-btn-group-wrap {
+    text-align: center;
+}
+
+.ap-btn-group-wrap .ap-btn-group {
+    margin: 0 auto; 
+    text-align: center;
+    width: inherit;
+    display: inline-block;
+}
+/*left or right style*/
+.ap-navbar-fixed-left{
+    position: fixed;
+    z-index:1001;
+    -webkit-box-shadow: 15px 0px 15px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 0px 15px -20px rgba(0,0,0,0.75);
+    box-shadow: 15px 0px 15px -20px rgba(0,0,0,0.75);
+}
+.caret-right {
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-left: 4px solid;
+    height: 0;
+    width: 0;
+}
+.ap-navbar-fixed-left.open{
+    width:300px;
+    height:100%;
+}
+.ap-navbar-fixed-left #ap-navbar{
+    height:100%;
+}
+.ap-navbar-fixed-left .ap-navbar-header{
+    float:none;
+}

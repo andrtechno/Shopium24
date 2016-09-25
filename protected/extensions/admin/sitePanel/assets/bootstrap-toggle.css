@@ -1,0 +1,83 @@
+/*! ========================================================================
+ * Bootstrap Toggle: bootstrap-toggle.css v2.2.0
+ * http://www.bootstraptoggle.com
+ * ========================================================================
+ * Copyright 2014 Min Hur, The New York Times Company
+ * Licensed under MIT
+ * ======================================================================== */
+
+
+.checkbox label .ap-toggle,
+.checkbox-inline .ap-toggle {
+	margin-left: -20px;
+	margin-right: 5px;
+}
+
+.ap-toggle {
+	position: relative;
+	overflow: hidden;
+}
+.ap-toggle input[type="checkbox"] {
+	display: none;
+}
+.ap-toggle-group {
+	position: absolute;
+	width: 200%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	transition: left 0.35s;
+	-webkit-transition: left 0.35s;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+.ap-toggle.off .ap-toggle-group {
+	left: -100%;
+}
+.ap-toggle-on {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 50%;
+	margin: 0;
+	border: 0;
+	border-radius: 0;
+}
+.ap-toggle-off {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	right: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 0;
+}
+.ap-toggle-handle {
+	position: relative;
+	margin: 0 auto;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	height: 100%;
+	width: 0px;
+	border-width: 0 1px;
+}
+
+.ap-toggle.ap-btn { min-width: 59px; min-height: 34px; }
+.ap-toggle-on.ap-btn { padding-right: 24px; }
+.ap-toggle-off.ap-btn { padding-left: 24px; }
+
+.ap-toggle.ap-btn-lg { min-width: 79px; min-height: 45px; }
+.ap-toggle-on.ap-btn-lg { padding-right: 31px; }
+.ap-toggle-off.ap-btn-lg { padding-left: 31px; }
+.ap-toggle-handle.ap-btn-lg { width: 40px; }
+
+.ap-toggle.ap-btn-sm { min-width: 50px; min-height: 30px;}
+.ap-toggle-on.ap-btn-sm { padding-right: 20px; }
+.ap-toggle-off.ap-btn-sm { padding-left: 20px; }
+
+.ap-toggle.ap-btn-xs { min-width: 35px; min-height: 22px;}
+.ap-toggle-on.ap-btn-xs { padding-right: 12px; }
+.ap-toggle-off.ap-btn-xs { padding-left: 12px; }
+

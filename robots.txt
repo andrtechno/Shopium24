@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /protected/
+Disallow: /themes/
+Disallow: /plugins/
+Disallow: /images/

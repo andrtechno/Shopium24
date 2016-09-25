@@ -1,0 +1,11 @@
+# windows thumbnail cache
+Thumbs.db
+
+# netbeans project files
+nbproject
+
+/DESIGN/
+/archive/
+/assets/
+/forum/
+/protected/config/

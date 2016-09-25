@@ -1,0 +1,62 @@
+
+<?php
+Yii::app()->tpl->openWidget(array(
+    'title' => 'Управлние переводами',
+));
+
+?>
+
+<form method="post" action="/" id="translate-choose-form">
+    <div style="padding: 15px;">
+    <div class="row">
+    <div class="col-md-3">
+        <?php
+        echo CHtml::dropDownList('type', '', array(
+            'core' => 'Системные', 'modules' => 'Модули'), array(
+            'empty' => '--- Выбор переводов ---',
+                'class'=>'form-control',
+            'onchange' => 'ajaxTranslate("#typeID","ajaxGet"); return false;'));
+        ?>
+
+    </div>
+    <div id="typeID"></div>
+    </div>
+        </div>
+</form>
+<?php
+Yii::app()->tpl->closeWidget();
+?>
+
+
+<div id="translateContainer"></div>
+
+
+
+
+
+
+
+<script>
+    function ajaxTranslate(selector,action){
+        $.ajax({
+            type:'POST',
+            url:'/admin/core/translates/'+action,
+            data:$('#translate-choose-form').serialize(),
+            success:function(result){
+                $(selector).html(result);
+            },
+            error:function(){
+                $('#translateContainer').html('');
+                $(selector).html('');
+                $.jGrowl('Ошибка');
+
+            },
+            beforeSend:function(){
+                $('#translateContainer').html('');
+               $.jGrowl('Загрузка...');
+               $(selector).text('Загрузка...');
+            }
+        });
+
+    }
+</script>
